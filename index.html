@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhythm Plus Experience</title>
+    <style>
+        :root {
+            --primary-color: #4a90e2;
+            --secondary-color: #2c3e50;
+            --accent-color: #e74c3c;
+            --light-bg: #f7f9fc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: var(--light-bg);
+            color: #333;
+        }
+
+        /* Header Styles */
+        .hero {
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Main Content Styles */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Button Styles */
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: var(--accent-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            margin: 1rem 0;
+        }
+
+        .cta-button:hover {
+            background-color: #c0392b;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        footer a {
+            color: var(--primary-color);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <h1>Discover the Power of Rhythm</h1>
+        <p>Experience music learning like never before with Rhythm Plus</p>
+        <a href="https://rhythm-plus.com/" target="_blank" class="cta-button">Start Your Journey</a>
+    </section>
+
+    <div class="container">
+        <section class="feature-grid">
+            <div class="feature-card">
+                <h2>Interactive Learning</h2>
+                <p>Engage with dynamic music lessons and exercises designed to enhance your rhythmic abilities.</p>
+                <a href="https://rhythm-plus.com/" target="_blank" class="cta-button">Learn More</a>
+            </div>
+
+            <div class="feature-card">
+                <h2>Professional Training</h2>
+                <p>Access expert-led instruction and comprehensive rhythm training materials.</p>
+                <a href="https://rhythm-plus.com/" target="_blank" class="cta-button">Explore Courses</a>
+            </div>
+
+            <div class="feature-card">
+                <h2>Track Progress</h2>
+                <p>Monitor your development with detailed progress tracking and performance analytics.</p>
+                <a href="https://rhythm-plus.com/" target="_blank" class="cta-button">View Features</a>
+            </div>
+        </section>
+
+        <section class="feature-card" style="text-align: center;">
+            <h2>Why Choose Rhythm Plus?</h2>
+            <ul style="list-style: none; margin: 1rem 0;">
+                <li>✓ Comprehensive rhythm training</li>
+                <li>✓ User-friendly interface</li>
+                <li>✓ Professional instruction</li>
+                <li>✓ Progress tracking</li>
+            </ul>
+            <a href="https://rhythm-plus.com/" target="_blank" class="cta-button">Join Now</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>Ready to transform your musical journey?</p>
+        <a href="https://rhythm-plus.com/" target="_blank" class="cta-button">Visit Rhythm Plus</a>
+        <p style="margin-top: 1rem;">&copy; 2024 Music Education Portal | Powered by Rhythm Plus</p>
+    </footer>
+</body>
+</html>
